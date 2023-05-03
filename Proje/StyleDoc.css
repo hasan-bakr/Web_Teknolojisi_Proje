@@ -1,0 +1,28 @@
+#logos
+{
+    background-color: bisque;
+}
+#saulogo
+{
+    width: 150px;
+}
+#logodiv
+{
+    float: left;
+}
+#baslik
+{
+    float:right;
+    font-size: 40px;
+}
+.clear
+{
+    clear:both;
+}
+#bosluk
+{
+    height: 5%;
+    width: 100%;
+    text-align: right;
+    background-color: rgb(83, 169, 169);
+}
