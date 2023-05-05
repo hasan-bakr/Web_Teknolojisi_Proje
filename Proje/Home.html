@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+      const apiKey = "7c8fec84c34b6c7ddfaf411b992fdba2";
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=ADIYAMAN&appid=$7c8fec84c34b6c7ddfaf411b992fdba2&units=metric`;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        const city = data.name;
+        const temp = data.main.temp;
+        const description = data.weather[0].description;
+        const icon = data.weather[0].icon;
+
+        document.getElementById("city").textContent = city;
+        document.getElementById("temp").textContent = temp + "°C";
+        document.getElementById("description").textContent = description;
+        document.getElementById("icon").setAttribute("src", `https://openweathermap.org/img/w/${icon}.png`);
+      })
+      .catch
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="StyleDoc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body id="Home">
+    <nav class="navbar">
+
+        <h1 id="Adıyaman">Adıyaman</h1>
+        <a class="Sett" href="#">AnaSayfa</a>
+        <a class="Sett" href="#">Deprem</a>
+        <a class="Sett" href="#">Öğrenci</a>
+        <a class="Sett" href="#">Tarihçe</a>
+    </nav>
+    <div id="welco" >Hoş Geldiniz...</div>
+    
+    <div> &nbsp;</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="#"><img id="nfs"src="ikizkenar-piramit.png.webp"></a>
+    <div id="weather"> 
+        <div>
+            <h2 id="city"></h2>
+            <p id="temp"></p>
+            <p id="description"></p>
+            <img id="icon" />
+        </div>
+    </div>
+</body>
+</html>

@@ -26,3 +26,76 @@
     text-align: right;
     background-color: rgb(83, 169, 169);
 }
+ul
+{
+list-style: none;
+ 
+}
+.navbar
+{
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(250, 250, 250);
+    
+}
+#Adıyaman
+{
+   
+    font-family: 'Satisfy', cursive;
+
+}
+#Home
+{
+    background-image: url("C:/Users/524ha/OneDrive/Masaüstü/Proje/BackgroundWall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.Sett
+{
+    color: rgb(150, 69, 69);
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+}
+#nfs
+{
+    float:left;
+    width:30%;
+}
+#welco
+{
+    float:left;
+    text-align: center;
+    width: 100%;
+    font-size: 600%;
+    color:white;
+    position: relative;
+    
+    font-family: 'Kaushan Script', cursive;
+    
+}
+
+#weather
+{
+  
+    float: right;
+    width: 150px;
+}
+#lg
+{
+    
+    width:20%;
+    margin: auto;
+    height: 20%;
+
+}
+#sd
+{
+    width: 150px;
+    float: right ;
+    padding-right: 30px;
+    padding-bottom: 100px;
+}
+
+
