@@ -3,7 +3,7 @@
 <head>
     <script>
       const apiKey = "7c8fec84c34b6c7ddfaf411b992fdba2";
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=ADIYAMAN&appid=$7c8fec84c34b6c7ddfaf411b992fdba2&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=ADIYAMAN&appid=7c8fec84c34b6c7ddfaf411b992fdba2&units=metric`;
 
     fetch(url)
       .then(response => response.json())
@@ -32,14 +32,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body id="Home">
     <nav class="navbar">
 
-        <h1 id="Adıyaman">Adıyaman</h1>
+        <h1  id="Adıyaman">Adıyaman</h1>
         <a class="Sett" href="#">AnaSayfa</a>
         <a class="Sett" href="#">Deprem</a>
         <a class="Sett" href="#">Öğrenci</a>
@@ -56,12 +56,17 @@
     <br>
     <a href="#"><img id="nfs"src="ikizkenar-piramit.png.webp"></a>
     <div id="weather"> 
-        <div>
-            <h2 id="city"></h2>
-            <p id="temp"></p>
-            <p id="description"></p>
+            <h2 " id="city"></h2>
             <img id="icon" />
-        </div>
+            <p   id="temp"></p>
+            <p id="description"></p>
     </div>
-</body>
+    <div style="clear:both">&nbsp;</div>
+    <div id="previousButton" style="float:left">&larr;</div>
+    <div style="text-align: center; color:red ;">
+      <img id="displayImage" src="kizilin.jpg" >
+    </div>
+    <div id="nextButton">&rarr;</div>
+ 
+  </body>
 </html>
