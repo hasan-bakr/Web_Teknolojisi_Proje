@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script>
+      
+
       const apiKey = "7c8fec84c34b6c7ddfaf411b992fdba2";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=ADIYAMAN&appid=7c8fec84c34b6c7ddfaf411b992fdba2&units=metric`;
 
@@ -36,11 +40,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body id="Home">
+<body id="Home" >
     <nav class="navbar">
 
         <h1  id="Adıyaman">Adıyaman</h1>
-        <a class="Sett" href="#">AnaSayfa</a>
+        <a class="Sett" href="Home.html">AnaSayfa</a>
         <a class="Sett" href="#">Deprem</a>
         <a class="Sett" href="#">Öğrenci</a>
         <a class="Sett" href="#">Tarihçe</a>
@@ -55,18 +59,35 @@
     <br>
     <br>
     <a href="#"><img id="nfs"src="ikizkenar-piramit.png.webp"></a>
-    <div id="weather"> 
+    <div id="weather" style="width: 35%;"> 
             <h2 " id="city"></h2>
             <img id="icon" />
             <p   id="temp"></p>
             <p id="description"></p>
     </div>
     <div style="clear:both">&nbsp;</div>
-    <div id="previousButton" style="float:left">&larr;</div>
-    <div style="text-align: center; color:red ;">
-      <img id="displayImage" src="kizilin.jpg" >
+
+    <div style="width:60%" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="kizilin.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="halfet.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="heads.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+     <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </button>
     </div>
-    <div id="nextButton">&rarr;</div>
- 
+   
   </body>
 </html>

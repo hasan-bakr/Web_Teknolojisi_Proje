@@ -49,7 +49,7 @@ list-style: none;
 {
     background-image: url("C:/Users/524ha/OneDrive/Masaüstü/Proje/BackgroundWall.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: scroll;
 
 }
 .Sett
@@ -119,19 +119,17 @@ list-style: none;
     text-align: center;
     padding-right: 900px;
 }
-#previousButton
+#resm
 {
-    position: absolute;
-    left:48%;
-    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
 }
-#nextButton
+.carousel-item
 {
-    position: absolute;
-    left:48%;
-    font-size: 30px;
+    width:100%;
 }
-
 
 
 
