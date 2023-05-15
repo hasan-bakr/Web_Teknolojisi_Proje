@@ -1,0 +1,23 @@
+.woman
+{ 
+    border-style: double ;
+    font-size: 30px;
+    text-align: right;
+    background-color: azure;
+    opacity: 0.6;
+}
+.man
+{
+    
+    border-style: double ;
+    font-size: 30px;
+    text-align: left;
+    background-color: azure;
+}
+.country
+{
+    border-style: double ;
+    background-color: azure;
+    font-size: 30px;
+    text-align: center;
+}

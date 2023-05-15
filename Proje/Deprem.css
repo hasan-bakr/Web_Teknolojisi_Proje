@@ -9,3 +9,23 @@
 {
     color: red;
 }
+#paragraph
+{
+    background-color:aliceblue;
+    color: black;
+    opacity: 0.8;
+    
+}
+.carouselitem
+{
+    width: 70px;
+    height: 50px;
+}
+#carouselExampleControls
+{
+    height: 40%;
+    width: 50%;
+    position: relative;
+    left:25%;
+    
+}
