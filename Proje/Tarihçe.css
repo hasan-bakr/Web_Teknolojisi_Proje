@@ -1,0 +1,14 @@
+#app
+{
+    background-color: rgb(98, 94, 94, .5);
+    height: 100%;
+}
+#kahtap
+{
+    width: 160%;
+    color:white;
+    background: rgb(0,0,0,.5);
+    position: relative;
+    right: 30%;
+    
+}
