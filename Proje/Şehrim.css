@@ -23,8 +23,7 @@
     background-color: rgba(27, 26, 25, 0.5);
     border-style: inset;
     width: 10%;
-    position: relative;
-    left:90%;
+    float:right
     
 }
 #city
@@ -48,5 +47,23 @@
     text-align: center;
     color:white
 }
-
-
+#piramit
+{
+    background-color: rgba(27, 26, 25, 0.5);
+    width: 35%;
+    border-style: inset;
+    border-color: white;
+    height: 40vh;
+    
+}
+.prg
+{
+    background-color: rgb(7, 7, 7, .7);
+    color:white;
+}
+.headers
+{
+    background-color: rgb(7, 7, 7, .2);
+    color:rgb(233, 189, 118);
+    margin-left:80px;
+}
