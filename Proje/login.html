@@ -6,6 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giriş Yap</title>
     <link rel="stylesheet" type="text/css" href="login.css">
+    <script>
+        function kontrol(event)
+        {
+            event.preventDefault();
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('pass').value;
+            
+            if(email.endsWith('@sakarya.edu.tr'))
+            {
+                var kullanici = email.split('@')[0];
+                if(kullanici != password)
+                {
+                    alert("Şifre ya da Email hatalı.");
+                    return;
+                }
+                window.location.href = "HakkımdaAfter.html";
+            }
+            else
+            {
+                alert("@sakarya.edu.tr ile bittiğine emin olunuz." );
+                return;
+            }
+
+            
+        }
+    </script>
 </head>
 <body>
     <div id="logos">
@@ -18,16 +44,18 @@
     <div class="clear"></div>
     </div>
     <div id="bosluk">&nbsp;</div>
-    <form id="ana" action="anasayfa.html" method="post">
+    <form id="ana" action="HakkımdaAfter.html" method="post">
     <div>
         <div style="text-align: center;">
+            
         <img style="width:40px ;margin-top:10px;" src="email.png">
         <label><h4>SAU Mail</h4></label>
-        <input type="email" style="width: 25%;" placeholder="Üniversite Mailinizi Giriniz..." required><br>
+        <input id="email" type="email" style="width: 25%;" placeholder="b221210076@sakarya.edu.tr" required><br>
         <div id="bosluk">&nbsp;</div>
         <label><h4>Şifre</h4></label>
-        <input type="text" style="width: 25%;" placeholder="Şifre Giriniz..." required>
-        <div style="padding-top: 10px;"> <input type="submit"  value="Giriş Yap" id="login"> </div>    
+        <input id="pass" type="text" style="width: 25%;" placeholder="b221210076" required>
+        <div style="padding-top: 10px;"> <input type="submit" onclick="kontrol(event)" value="Giriş Yap" id="login"> </div>    
+       
         <div id="bosluk">&nbsp;</div>
     </div>
     </form>

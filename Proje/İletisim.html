@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function goster() {
+        var names = document.getElementById("names").value;
+        var email = document.getElementById("email").value;
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@sakarya\.edu\.tr$/;
+
+    if (!emailPattern.test(email)) {
+        alert("Lütfen geçerli bir @sakarya.edu.tr e-posta adresi girin!");
+        return;
+    }
+        var gender = document.getElementById("gender").value;
+        var browser = document.querySelector('input[name="browser"]').value;
+        var yaka = document.querySelector('input[name="yaka"]:checked').value;
+        var date = document.getElementById("date").value;
+        var redirectURL = "iletisim2.html?isim=" + encodeURIComponent(names) + "&email=" + encodeURIComponent(email) + "&gender=" + encodeURIComponent(gender) + "&browser=" + encodeURIComponent(browser) + "&yaka=" +
+            encodeURIComponent(yaka) + "&date=" + encodeURIComponent(date); // Eksi işaretlerini düzgün şekilde ekleyin
+        window.location.href = redirectURL;
+        }
+    </script>
+</head>
+<body style=" background:rgb(0,0,0,.6)">
+    <div style="position: relative; top:100px;">
+        <h3 style="margin-left: 35px; background-color: rgb(104, 91, 91, .5);color:white;">İLETİŞİM</h3>
+        <label style="color:white; margin-left: 15px;"> İsim:</label>
+        <input style="margin-left: 35px; background-color: transparent; color:white; border-bottom-color: white; width:10%;"  type="text" id="names" placeholder="İsminizi girin" ><br><br>
+        <label style="color:white; margin-left: 15px; "> Email:</label>
+        <input style="margin-left: 26px; background-color: transparent; color:white; border-bottom-color: white; width: 20%;" type="text" id="email" placeholder="Email Gİriniz.."><br><br>
+        <label style="color:white; margin-left: 15px;" > Cinsiyet:</label>
+        <select id="gender" name="gender">
+            <option value="Erkek">Erkek</option>
+            <option value="Kadın">Kadın</option>
+        </select>
+        <label style="color:white; margin-left: 15px; "> Tarayıcı:</label>
+        <input list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+    </datalist><br><br>
+    <label style="margin-left: 10px; color:white">Hangisi Yaka Karşısıdır?</label><br>
+    <input type="radio" style="margin-left: 10px; " name="yaka" id="anadolu" value="Anadolu"> <label style="color:white" for="anadolu"> Anadolu</label>
+    <input type="radio" style="margin-left: 10px; " name="yaka" id="avrupa" value="Avrupa"> <label style="color:white" for="avrupa"> Avrupa</label><br><br>
+    <label style="color:white">Bugünün Tarihi:</label><input type="date" id="date" style="margin-left: 10px;">
+        <button style="margin-left: 30px;" onclick="goster()">Gönder</button>
+    </div>
+
+    
+
+    
+</body>
+</html>

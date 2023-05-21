@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        var names = urlParams.get('isim');
+        var email = urlParams.get('email');
+        var message = urlParams.get('message');
+        var genders = urlParams.get('gender');
+        var browser =urlParams.get('browser');
+        var yaka = urlParams.get('yaka');
+        var date = urlParams.get('date');
+        
+        document.write("<h1>Gönderen, " + names + "</h1>");
+        document.write("<p>E-posta: " + email + "</p>");
+        document.write("<p>Cinsiyet: " + genders + "</p>");
+        document.write("<p>En Sevdiğim Tarayıcı: " + browser + "</p>");
+        document.write("<p>" + yaka + " karşısıdır." + "</p>");
+        document.write("<p>Bugünün Tarihi: " + date + "</p>");
+        </script>
+        
+        
+</head>
+<body>
+    
+</body>
+</html>
